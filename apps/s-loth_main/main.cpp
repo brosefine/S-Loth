@@ -595,6 +595,7 @@ int32_t main(int32_t argc, char* argv[]) {
   effect_->m_wind = true;
   effect_->m_windVec = glm::vec3(1.5f, 0.1f, 0.f);
   effect_->m_res = 1.f;
+  effect_->m_sphereFric = 0.5f;
   effect_->init(10, camera_);
   effect_->reset();
   for(int i = 0; i < 30; ++i){
