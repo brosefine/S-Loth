@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="s-loth"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\source\;CMake Files\apps\;CMake Files\apps\s-loth_main\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s-loth_source">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/lib/libs-loth_source.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 s-loth_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s-loth_source/fast">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/lib/libs-loth_source.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 s-loth_source/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s-loth_main_app">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/bin/s-loth_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 s-loth_main_app"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s-loth_main_app/fast">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/bin/s-loth_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 s-loth_main_app/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/apps/s-loth_main/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/main.cpp">
+			<Option target="s-loth_main_app"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/camera/Camera.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/clothSystem.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleData.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleEffects.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleEmitter.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleGenerators.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleRenderer.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleSystem.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/cloth/particleUpdaters.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_demo.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_draw.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_impl_freeglut.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_impl_opengl2.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_widgets.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/object/object.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/SimpleShaders.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/TextureShaders.cpp">
+			<Option target="s-loth_source"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindGLUT.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/CMakeParseArguments.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindOpenGL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/CMakeParseArguments.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindGLEW.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/CMakeParseArguments.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindSOIL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\source\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\source\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/app.cmake">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/app.cmake">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\s-loth_main\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\s-loth_main\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/s-loth_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\s-loth_main\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

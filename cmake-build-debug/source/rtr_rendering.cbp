@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rtr_rendering"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\source\;CMake Files\apps\;CMake Files\apps\rtr_cloth\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtr_rendering">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/lib/librtr_rendering.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/IL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 rtr_rendering"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtr_rendering/fast">
+				<Option output="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/lib/librtr_rendering.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/RELATIVE"/>
+					<Add directory="/home/anny/Dokumente/Projects/untitled/source/include"/>
+					<Add directory="/usr/include/IL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 rtr_rendering/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/anny/Dokumente/Projects/untitled/cmake-build-debug/source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/camera/Camera.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_demo.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_draw.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_impl_freeglut.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_impl_opengl2.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_impl_opengl3.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/imgui/imgui_widgets.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/model/model.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/model/model_loader.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/model/tiny_obj_loader.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/clothSystem.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleData.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleEffects.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleEmitter.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleGenerators.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleRenderer.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleSystem.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/ren/particleUpdaters.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/ParticleShaders.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/SimpleShaders.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/SkyboxShaders.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/TerrainShaders.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/src/shaders/TextureShaders.cpp">
+			<Option target="rtr_rendering"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindGLUT.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/CMakeParseArguments.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindOpenGL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/CMakeParseArguments.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/cmake/FindSOIL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\source\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\source\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/app.cmake">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/app.cmake">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/rtr_cloth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\rtr_cloth\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/rtr_cloth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\rtr_cloth\"/>
+		</Unit>
+		<Unit filename="/home/anny/Dokumente/Projects/untitled/apps/rtr_cloth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\rtr_cloth\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
