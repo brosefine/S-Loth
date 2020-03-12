@@ -1,6 +1,8 @@
 # S-Loth
 A simulated cloth application
 
+![](cloth.gif)
+
 ## Sources
 * The underlying system is based on Bartek's particle system: [Bartek's Coding Blog](https://www.bfilipek.com/2014/03/three-particle-effects.html)
 * For the cloth simulation, the particle system was extended based on two cloth tutorials:
