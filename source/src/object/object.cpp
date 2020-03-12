@@ -10,7 +10,7 @@ void Object::translate(glm::fvec3 const& v){
 }
 
 void Object::set_translate(glm::fvec3 const &v) {
-  m_translation_matrix = glm::translate(glm::fmat4{}, v);
+  m_translation_matrix = glm::translate(glm::fmat4{1.f}, v);
 }
 
 void Object::rotate(glm::fvec3 const& axis, float r){
@@ -18,7 +18,7 @@ void Object::rotate(glm::fvec3 const& axis, float r){
 }
 
 void Object::set_rotate(glm::fvec3 const &axis, float r) {
-  m_rotation_matrix = glm::rotate(glm::fmat4{}, r, axis);
+  m_rotation_matrix = glm::rotate(glm::fmat4{1.f}, r, axis);
 
 }
 
@@ -27,7 +27,7 @@ void Object::scale(float scale){
 }
 
 void Object::set_scale(float scale) {
-  m_scale_matrix = glm::scale(glm::fmat4{}, glm::fvec3{scale, scale, scale});
+  m_scale_matrix = glm::scale(glm::fmat4{1.f}, glm::fvec3{scale, scale, scale});
 }
 
 void Object::activate() const {
@@ -140,7 +140,7 @@ void Sphere::init(){
     angle = M_PI / 2.f + step_y * j;
     //points in each ring
     for (int i = 0; i <= edges; ++i) {
-      point = glm::rotate(glm::fmat4{}, step_x * i + offset * j, glm::vec3(0.f, 1.f, 0.f))
+      point = glm::rotate(glm::fmat4{1.f}, step_x * i + offset * j, glm::vec3(0.f, 1.f, 0.f))
               * glm::vec4(cos(angle), sin(angle), 0.f, 1.f);
       m_vertices.push_back(point.x);
       m_vertices.push_back(point.y);

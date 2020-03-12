@@ -7,11 +7,11 @@
 #include <cloth/particleEffects.hpp>
 #include <cloth/clothSystem.h>
 
+
 void ClothEffect::reset() {
   if(m_sys && m_gridW * m_gridH != m_sys->getCount()) m_fixed.clear();
   m_sys.reset(new ClothSystem(m_gridW * m_gridH, m_cam));
   m_rend.reset(new ParticleRenderer());
-
   m_posGen->m_pos = m_gridPos;
   m_posGen->m_rot = m_gridRot;
   m_posGen->m_w = m_gridW;

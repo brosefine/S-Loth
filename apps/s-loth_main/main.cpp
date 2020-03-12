@@ -6,6 +6,8 @@
 #include <imgui/imgui.h>
 #include <imgui/imgui_impl_freeglut.h>
 #include <imgui/imgui_impl_opengl2.h>
+#include <glm/gtx/string_cast.hpp>
+
 
 //shader uniforms
 #define CAM_MAT "camera_matrix"
@@ -253,9 +255,9 @@ void gui_display(){
       if(color_mode_ == TEXTURE){
         effect_->m_gridH = effect_->m_gridW * (tex_dims_[current_tex_].y / tex_dims_[current_tex_].x);
       }
-      if(rotation_ == 0) {effect_->m_gridRot = glm::fmat4();}
-      else if (rotation_ == 1) {effect_->m_gridRot = glm::rotate(glm::fmat4(), (float)(M_PI / 2.f), glm::vec3(1.f, 0.f, 0.f));}
-      else if (rotation_ == 2) {effect_->m_gridRot = glm::rotate(glm::fmat4(), (float)(M_PI / 2.f), glm::vec3(0.f, 0.f, 1.f));}
+      if(rotation_ == 0) {effect_->m_gridRot = glm::fmat4(1.f);}
+      else if (rotation_ == 1) {effect_->m_gridRot = glm::rotate(glm::fmat4(1.f), (float)(M_PI / 2.f), glm::vec3(1.f, 0.f, 0.f));}
+      else if (rotation_ == 2) {effect_->m_gridRot = glm::rotate(glm::fmat4(1.f), (float)(M_PI / 2.f), glm::vec3(0.f, 0.f, 1.f));}
 
       effect_->reset();
     }
@@ -574,7 +576,7 @@ int32_t main(int32_t argc, char* argv[]) {
   //setup cloth
   effect_ = new ClothEffect();
   //example setup
-  effect_->m_gridRot = glm::rotate(glm::fmat4(), (float)(M_PI / 2.f), glm::vec3(1.f, 0.f, 0.f));
+  effect_->m_gridRot = glm::rotate(glm::fmat4(1.f), (float)(M_PI / 2.f), glm::vec3(1.f, 0.f, 0.f));
   effect_->m_gridW = 30;
   effect_->m_gridH = 30;
   effect_->m_gridD = 0.4;

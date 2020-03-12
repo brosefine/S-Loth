@@ -5,7 +5,6 @@
  ******************************************************************************/
 
 #include <cloth/particleGenerators.hpp>
-
 /******************************************************************************
 void generate(float dt, ParticleData *p, size_t start_id, size_t end_id){
 	for (size_t i = start_id; i <= end_id; ++i) {
@@ -20,6 +19,7 @@ void GridPosGen::generate(float dt, ParticleData *p, size_t start_id, size_t end
 	new_pos.w = 1;
 
     auto pos = p->m_pos.get();
+
     auto ind = p->m_indices;
 	for(unsigned int i = start_id; i <= end_id; ++i){
 		if(i / m_h > m_w) break;
@@ -27,11 +27,14 @@ void GridPosGen::generate(float dt, ParticleData *p, size_t start_id, size_t end
         new_pos.y = 0;
         new_pos.z = (i / m_w) * m_d - (m_h / 2) * m_d;
 
+
 		new_pos = m_rot * new_pos;
 
-		pos[i].x = new_pos.x ;
+		pos[i].x = new_pos.x;
 		pos[i].y = new_pos.y;
-		pos[i].z = new_pos.z ;
+		pos[i].z = new_pos.z;
+
+
 	}
 }
 
