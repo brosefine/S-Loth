@@ -22,4 +22,6 @@
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 
+#define M_PI 3.14
+
 #endif //HEADERS_HPP

@@ -3,85 +3,14 @@
 ############################################################
 
 # Project settings
-cmake_minimum_required(VERSION 2.8.7)
-project(s-loth)
+cmake_minimum_required(VERSION 3.14)
 
-set(CMAKE_CONFIGURATION_TYPES Debug Release CACHE TYPE INTERNAL FORCE )
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release CACHE STRING
-            "Choose the type of build, options are: None Debug Release RelWithDebInfo MinsizeRel."
-            FORCE)
-endif()
-
-get_filename_component(CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} ABSOLUTE)
-
-message(STATUS "Build type:     ${CMAKE_BUILD_TYPE}")
-message(STATUS "Install prefix: ${CMAKE_INSTALL_PREFIX}")
-
-############################################################
-# Directories
-
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
-set(TEST_OUTPUT_PATH ${CMAKE_BINARY_DIR}/test)
-set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
-set(S-LOTH_CONFIG_DIR ${CMAKE_BINARY_DIR})
-
-if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    set (CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/install" CACHE PATH "default install path" FORCE )
-endif()
+file(GLOB_RECURSE SRC_FILES
+        ${CMAKE_SOURCE_DIR}/source/src/*.cpp 
+        ${CMAKE_SOURCE_DIR}/source/src/*.c)
 
 
-file(MAKE_DIRECTORY ${EXECUTABLE_OUTPUT_PATH})
-file(MAKE_DIRECTORY ${TEST_OUTPUT_PATH})
-file(MAKE_DIRECTORY ${LIBRARY_OUTPUT_PATH})
-
-############################################################
-if(MSVC)
-    set(PROJECT_COMPILE_FLAGS "-D_VARIADIC_MAX=10 -D _SCL_SECURE=0 -D _USE_MATH_DEFINES=1 /MP -D NOMINMAX")
-    set(PROJECT_LIBS "")
-elseif(CMAKE_COMPILER_IS_GNUCXX OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-    set(PROJECT_COMPILE_FLAGS "-std=c++1y -Wall -pthread -fPIC -fopenmp")
-    set(PROJECT_LIBS "pthread")
-endif()
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILE_FLAGS}")
-
-set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
-set(CMAKE_INSTALL_RPATH "\$ORIGIN/../lib")
-
-############################################################
-# Externals
-################################
-SET(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${GLOBAL_EXT_DIR})
-
-################################
-# GLUT
-################################
-include(FindGLUT)
-
-################################
-# OpenGL
-################################
-include(FindOpenGL)
-
-###############################
-# GLEW
-###############################
-include(FindGLEW)
-
-################################ 
-# SOIL
-################################
-include(FindSOIL)
-
-############################################################
-# Targets
-
-add_subdirectory(${CMAKE_SOURCE_DIR}/source)
-add_subdirectory(${CMAKE_SOURCE_DIR}/apps)
-
+include(FetchContent)
 
 # install shaders
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/resources/shaders DESTINATION resources
@@ -100,4 +29,36 @@ install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/resources/textures DESTINATION res
         PATTERN "*.JPEG"
         )
 
+FetchContent_Declare(
+        freeglut
+        GIT_REPOSITORY https://github.com/LuaDist/freeglut/
+)
+FetchContent_MakeAvailable(freeglut)
 
+FetchContent_Declare(
+    glm
+    GIT_REPOSITORY https://github.com/g-truc/glm.git
+    GIT_TAG        0.9.9.8
+)
+FetchContent_MakeAvailable(glm)
+
+FetchContent_Declare(
+  GLEW
+  URL            https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0-win32.zip
+)
+FetchContent_MakeAvailable(glew)
+find_package(GLEW REQUIRED)
+
+FetchContent_Declare(
+        soil
+        GIT_REPOSITORY https://github.com/paralin/soil
+)
+FetchContent_MakeAvailable(soil)
+
+add_library(source_files ${SRC_FILES})
+target_include_directories(source_files PUBLIC ${CMAKE_SOURCE_DIR}/source/include/ ${CMAKE_SOURCE_DIR}/lib_headers/)
+target_link_libraries(source_files freeglut glm GLEW::GLEW soil)
+
+add_executable(${PROJECT_NAME}_main ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp ${SRC_FILES})
+target_include_directories(${PROJECT_NAME}_main PUBLIC ${CMAKE_SOURCE_DIR}/source/include/ ${CMAKE_SOURCE_DIR}/lib_headers/)
+target_link_libraries(${PROJECT_NAME}_main freeglut glm GLEW::GLEW soil)

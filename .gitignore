@@ -37,3 +37,4 @@
 #CMAKE
 build/
 install/
+cmake-build-debug/

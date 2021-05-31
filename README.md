@@ -58,3 +58,9 @@ In the application:
 * press space to stop all movement
 * press left mouse button and move mouse to look around
 * play around with all the gui options!
+
+
+## Windows install (in-progress)
+* TODO: add thirdparty dependencies in separate folder
+* TODO: set libraries and include directories in CMake script
+* TODO: install .dll files, textures, and shaders with CMake
